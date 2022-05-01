@@ -8,9 +8,28 @@
      padding: 1rem;
      margin: 2rem auto;
      
-     text-align: center;
+     text-align:center;
      
      background-color: $violet-light;
      
-     button{}
+     button{
+
+          margin-right: 1rem;
+          padding: 1rem 2rem;
+
+          border: 1px solid $violet-dark;
+          border-radius: 12px;
+
+          cursor: pointer;
+          color: $text-color;
+          background-color: $violet-dark;
+          font: inherit;
+          transition: 200ms linear;
+
+          &:hover{
+               background-color: $violet-dark-hover;
+               border-color: $violet-dark-hover;
+          }
+     }
 }
+

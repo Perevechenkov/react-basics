@@ -10,7 +10,7 @@
 
   h2{
      flex: 1;
-  color: white;
+  color: $text-color;
   font-size: 1rem;
   margin: 0 1rem;
   }
@@ -28,12 +28,12 @@
 
 .expense-item__price{
 
-  color: white;
+  color: $text-color;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem;
   background-color: $violet-dark;
-  border: 1px solid white;
+  border: 1px solid $border-light;
   border-radius: 12px;
 }
 
