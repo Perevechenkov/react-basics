@@ -1,0 +1,16 @@
+@use '../../variables' as *;
+
+.new-expense{
+
+     
+     width: 50rem;
+     max-width: 95%;
+     padding: 1rem;
+     margin: 2rem auto;
+     
+     text-align: center;
+     
+     background-color: $violet-light;
+     
+     button{}
+}

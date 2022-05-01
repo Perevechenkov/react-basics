@@ -1,4 +1,4 @@
-import './Card.sass';
+import './Card.scss';
 
 export default function Card(props) {
   const classes = 'card ' + props.className;
