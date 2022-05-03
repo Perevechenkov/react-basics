@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.expenses-filter {
+     padding: 0 1rem;
+
+     color: $text-color;
+
+     .expenses-filter__control {
+          width: 100%;
+          margin: 1rem 0;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     label {
+          margin-bottom: 0.5rem;
+
+          font-weight: bold;
+     }
+
+     select {
+          padding: 0.5rem 3rem;
+          border-radius: 6px;
+
+          font: inherit;
+          font-weight: bold;
+     }
+}
