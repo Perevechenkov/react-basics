@@ -1,8 +1,12 @@
+import { useState } from 'react';
+
 import Card from '../UI/Card';
 import ExpenseItem from './ExpenseItem';
 import './Expenses.scss';
 
 function Expenses(props) {
+  const [items, setItems] = useState(props.items);
+
   return (
     <Card className='expenses'>
       {props.items.map((item, index) => {
