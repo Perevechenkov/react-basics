@@ -8,6 +8,10 @@ import './Expenses.scss';
 function Expenses(props) {
   const [filteredYear, setFilteredYear] = useState('2022');
 
+  const filteredExpenses = props.items.filter(expense => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
+
   const filterChangeHandler = selectedYear => {
     setFilteredYear(selectedYear);
   };
@@ -18,7 +22,7 @@ function Expenses(props) {
         selectedYear={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {props.items.map(expense => {
+      {filteredExpenses.map(expense => {
         return (
           <ExpenseItem
             key={expense.id}

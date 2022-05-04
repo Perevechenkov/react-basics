@@ -10,6 +10,7 @@ export default function NewExpense(props) {
     };
     props.onAddExpense(expenseData);
   };
+
   return (
     <Card className='new-expense'>
       <ExpenseForm onSaveExpenseData={saveExpenseDateHandler} />
