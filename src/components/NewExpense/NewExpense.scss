@@ -1,17 +1,16 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
-.new-expense{
+.new-expense {
      width: 50rem;
      max-width: 95%;
      padding: 1rem;
      margin: 2rem auto;
-     
-     text-align:center;
-     
-     background-color: $violet-light;
-     
-     button{
 
+     text-align: center;
+
+     background-color: $violet-light;
+
+     button {
           margin-right: 1rem;
           padding: 1rem 2rem;
 
@@ -24,10 +23,9 @@
           font: inherit;
           transition: 200ms linear;
 
-          &:hover{
+          &:hover {
                background-color: $violet-dark-hover;
                border-color: $violet-dark-hover;
           }
      }
 }
-

@@ -1,6 +1,6 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
-.card{
+.card {
      border-radius: 12px;
      box-shadow: 0 1px 8px $border-shadow-dark;
 }

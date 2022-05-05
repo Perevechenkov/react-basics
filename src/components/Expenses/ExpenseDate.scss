@@ -1,6 +1,6 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
-.expense-date{
+.expense-date {
   display: flex;
   flex-direction: column;
   width: 5.5rem;
@@ -13,16 +13,15 @@
   justify-content: center;
 }
 
-.expense-date__month{
+.expense-date__month {
   font-size: 0.75rem;
   font-weight: bold;
 }
 
-.expense-date__year{
+.expense-date__year {
   font-size: 0.75rem;
 }
-.expense-date__day{
-
+.expense-date__day {
   font-size: 1.5rem;
   font-weight: bold;
 }
