@@ -14,11 +14,13 @@ export default function ExpenseForm(props) {
       return { ...prevState, title: event.target.value };
     });
   };
+
   const anountChangeHandler = event => {
     setUserInput(prevState => {
       return { ...prevState, amount: event.target.value };
     });
   };
+
   const dateChangeHandler = event => {
     setUserInput(prevState => {
       return { ...prevState, date: event.target.value };
@@ -71,6 +73,9 @@ export default function ExpenseForm(props) {
         </div>
       </div>
       <div className='new-expense__actions'>
+        <button type='button' onClick={props.onCancel}>
+          Cancel
+        </button>
         <button type='submit'>Add Expense</button>
       </div>
     </form>
