@@ -1,4 +1,5 @@
-@use "./variables" as *;
+@use "./abstracts/forwards" as *;
+
 @font-face {
   font-family: "Noto Sans";
   src: url("assets/fonts/NotoSans-Regular.ttf") format("truetype");
