@@ -12,6 +12,7 @@ export default function NewExpense(props) {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
+
     props.onAddExpense(expenseData);
     toggleFormEditingHandler();
   };

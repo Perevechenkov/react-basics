@@ -1,0 +1,36 @@
+@use "../../abstracts/variables" as *;
+
+.chart-bar {
+     min-width: 24px;
+
+     display: flex;
+     flex-direction: column;
+
+     .chart-bar__inner {
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          border: 2px solid $border-shadow-dark;
+          border-radius: 12px;
+
+          overflow: hidden;
+
+          background-color: $violet-light;
+
+          .chart-bar__fill {
+               background-color: $blue-chart-fill;
+
+               transition: all 0.3s ease-out;
+          }
+     }
+
+     .chart-bar__label {
+          text-align: center;
+
+          font-weight: bold;
+          font-size: 0.7rem;
+     }
+}
