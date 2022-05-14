@@ -17,7 +17,7 @@ export default function ExpenseForm(props) {
 
   const anountChangeHandler = event => {
     setUserInput(prevState => {
-      return { ...prevState, amount: event.target.value };
+      return { ...prevState, amount: parseFloat(event.target.value) };
     });
   };
 
